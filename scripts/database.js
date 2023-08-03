@@ -5,15 +5,15 @@ const database = {
     services: [],
 }
 
-export const areas = () => {
+export const getAreas = () => {
     return structuredClone(database.areas)
 }
-export const guests = () => {
+export const getGuests = () => {
     return structuredClone(database.guests)
 }
-export const parkServices = () => {
+export const getParkServices = () => {
     return structuredClone(database.parkServices)
 }
-export const services = () => {
+export const getServices = () => {
     return structuredClone(database.services)
 }
