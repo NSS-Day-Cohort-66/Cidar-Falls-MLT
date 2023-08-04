@@ -1,0 +1,35 @@
+#header {
+  text-align: center;
+}
+
+#header img {
+  width: 150px;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+#list_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.areas_header {
+  text-align: center;
+}
+
+.areas_container {
+  border: 2px solid #add8ad;
+  padding: 0 20px 15px;
+}
+
+.guest_container {
+  border: 2px solid #add8ad;
+  padding: 0 20px 15px;
+}
+
+.footer {
+  text-align: center;
+}
