@@ -3,9 +3,11 @@ import { getServices } from "./database.js";
 const services = getServices()
 
 export const ServicesList = () => {
-    let serviceHTML = `<ul>`
+    let servicesArray = []
     for (const service of services) {
-        serviceHTML += `<li>${service.name}</li>`
+        servicesArray.push(service.name)
     }
+    const commaArray = servicesArray.join(", ")
+    const serviceHTML = `<ul>${commaArray}!</ul>`
     return serviceHTML
 }
