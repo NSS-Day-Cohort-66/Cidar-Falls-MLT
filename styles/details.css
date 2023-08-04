@@ -25,6 +25,19 @@ li {
   padding: 0 20px 15px;
 }
 
+.area_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#area_card {
+  border: 2px solid #add8ad;
+  padding: 0 15px 15px;
+  flex-basis: 25%;
+  margin: 15px;
+}
+
 .guest_container {
   border: 2px solid #add8ad;
   padding: 0 20px 15px;
