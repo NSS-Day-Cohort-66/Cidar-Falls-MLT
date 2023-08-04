@@ -25,8 +25,8 @@ export const AreaList = () => {
         }
       }
     }
-    areaHTML += `</div>`;
   }
+  areaHTML += `</div>`;
   return areaHTML;
 };
 
