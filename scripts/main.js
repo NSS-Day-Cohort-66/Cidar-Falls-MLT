@@ -1,4 +1,4 @@
-
+import {GuestList} from "./guest.js"
 
 
 const mainContainer = document.querySelector("#container")
@@ -9,7 +9,7 @@ const applicationHTML = `
 <article>
     <section class="areas_container">
         <h2>Enjoy All Our Park Areas:</h2>
-        ${Areas()}
+        
     </section>
     <aside class="guest_container">
         <h2>Guest List</h2>
