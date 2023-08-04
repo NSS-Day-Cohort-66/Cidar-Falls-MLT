@@ -11,9 +11,10 @@ const services = getServices();
 const guests = getGuests();
 
 export const AreaList = () => {
-  let areaHTML = `<div id="area_card">`;
+  let areaHTML = `<div class="area_list">`;
   for (const area of areas) {
-    areaHTML += `<h2 data-id="${area.id}"
+    areaHTML += `<div id="area_card">
+                    <h2 data-id="${area.id}"
                      data-type="area">${area.name}</h2>`;
     for (const service of parkServices) {
       for (const specificService of services) {
@@ -25,6 +26,7 @@ export const AreaList = () => {
         }
       }
     }
+    areaHTML += `</div>`;
   }
   areaHTML += `</div>`;
   return areaHTML;
@@ -46,5 +48,8 @@ document.addEventListener("click", (areaClick) => {
     } else {
       window.alert(`There are ${counter} guests in this area`);
     }
+    areaHTML += `</div>`;
   }
+  areaHTML += `</div>`;
+  return areaHTML;
 });
