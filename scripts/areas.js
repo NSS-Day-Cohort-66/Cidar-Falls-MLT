@@ -39,6 +39,12 @@ document.addEventListener("click", (areaClick) => {
         counter++;
       }
     }
-    window.alert(`There are ${counter} guests in this area`);
+    if (counter == 0) {
+      window.alert(`There are no guests in this area`);
+    } else if (counter == 1) {
+      window.alert(`There is ${counter} guest in this area`);
+    } else {
+      window.alert(`There are ${counter} guests in this area`);
+    }
   }
 });
