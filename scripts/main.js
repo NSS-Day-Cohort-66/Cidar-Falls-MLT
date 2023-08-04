@@ -1,5 +1,6 @@
 import {GuestList} from "./guest.js"
-import {AreaList} from "./areas.js";
+import {AreaList} from "./areas.js"
+import { ServicesList } from "./services.js"
 
 const mainContainer = document.querySelector("#container");
 
@@ -8,6 +9,10 @@ const applicationHTML = `
     <img src="./images/logo.png">
     <h1>Welcome to Cidar Falls</h1>
 </div>
+<article>
+    <h2>Park Services Include:</h2>
+    ${ServicesList()}
+</article>
 <article id="list_container">
     <section class="areas_container">
         <h2>Enjoy All Our Park Areas:</h2>
