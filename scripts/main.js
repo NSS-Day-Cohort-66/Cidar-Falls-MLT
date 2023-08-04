@@ -1,4 +1,5 @@
 import {GuestList} from "./guest.js"
+import {AreaList} from "./areas.js";
 
 
 const mainContainer = document.querySelector("#container")
@@ -9,7 +10,7 @@ const applicationHTML = `
 <article>
     <section class="areas_container">
         <h2>Enjoy All Our Park Areas:</h2>
-        
+        ${AreaList()}
     </section>
     <aside class="guest_container">
         <h2>Guest List</h2>
