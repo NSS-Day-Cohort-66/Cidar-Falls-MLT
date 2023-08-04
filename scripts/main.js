@@ -1,5 +1,6 @@
 import {GuestList} from "./guest.js"
-import {AreaList} from "./areas.js";
+import {AreaList} from "./areas.js"
+import { ServicesList } from "./services.js"
 
 const mainContainer = document.querySelector("#container");
 
