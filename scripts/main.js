@@ -25,9 +25,11 @@ const applicationHTML = `
 </article>
 <footer class="footer">
     <h2>Contact the Park</h2>
-    <address>5123 Maplewood Avenue<br>Evergreen Springs, CO 12345</address>
-    <p>123-345-6789</p>
-    <p>cidar.falls@info.com</p>
+    <div id="footer_info">
+        <p>(123)-345-6789</p>
+        <address>5123 Maplewood Avenue<br>Evergreen Springs, CO 12345</address>
+        <p>cidar.falls@info.com</p>
+    </div>
 </section>
 `;
 
