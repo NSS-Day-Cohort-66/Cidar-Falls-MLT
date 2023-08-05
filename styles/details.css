@@ -16,13 +16,8 @@ li {
   justify-content: space-around;
 }
 
-.areas_header {
+#areas_header {
   text-align: center;
-}
-
-.areas_container {
-  border: 2px solid #add8ad;
-  padding: 0 20px 15px;
 }
 
 .area_list {

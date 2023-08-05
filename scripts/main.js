@@ -1,6 +1,6 @@
-import {GuestList} from "./guest.js"
-import {AreaList} from "./areas.js"
-import { ServicesList } from "./services.js"
+import { GuestList } from "./guest.js";
+import { AreaList } from "./areas.js";
+import { ServicesList } from "./services.js";
 
 const mainContainer = document.querySelector("#container");
 
@@ -15,7 +15,7 @@ const applicationHTML = `
 </article>
 <article id="list_container">
     <section class="areas_container">
-        <h2>Enjoy All Our Park Areas:</h2>
+        <h2 id="areas_header">Enjoy All Our Park Areas:</h2>
         ${AreaList()}
     </section>
     <aside class="guest_container">
