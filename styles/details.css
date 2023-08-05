@@ -46,3 +46,29 @@ li {
 .footer {
   text-align: center;
 }
+
+.service_list {
+  list-style: none;
+  padding-top: 10px;
+  margin: 10;
+}
+
+.service_item {
+  display: inline;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+.service_item:not(:last-child)::after {
+  content: ", ";
+}
+
+.park_services{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+li[data-type="service"]:hover{
+  color: red;
+  cursor: pointer;
+}

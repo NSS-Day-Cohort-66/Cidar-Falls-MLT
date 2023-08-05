@@ -9,7 +9,7 @@ const applicationHTML = `
     <img src="./images/logo.png">
     <h1>Welcome to Cidar Falls</h1>
 </div>
-<article>
+<article class="park_services">
     <h2>Park Services Include:</h2>
     ${ServicesList()}
 </article>
