@@ -5,6 +5,8 @@
 #header img {
   width: 150px;
   height: auto;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 li {
@@ -27,17 +29,75 @@ li {
 }
 
 #area_card {
-  border: 2px solid #add8ad;
+  /* border: 1px solid #add8ad; */
+  border-radius: 10px;
   padding: 0 15px 15px;
   flex-basis: 25%;
+  height: 200px;
   margin: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+  transition: transform 0.2s ease;
+}
+
+#area_card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  /* cursor: pointer; */
 }
 
 .guest_container {
-  border: 2px solid #add8ad;
+  /* border: 1px solid #add8ad; */
+  border-radius: 10px;
   padding: 0 20px 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#footer_info{
+  display: flex;
+  flex-wrap: nowrap;
+  /* align-content: center; */
+  justify-content: space-evenly;
+}
+
+.service_list {
+  list-style: none;
+  padding-top: 10px;
+  /* margin: 10px; */
+}
+
+.service_item {
+  display: inline;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+.service_item:not(:last-child)::after {
+  content: ", ";
+}
+
+.park_services{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+li[data-type="service"]:hover{
+  color: #add8ad;
+  cursor: pointer;
+}
+
+h2[data-type="area"]:hover{
+  color: #add8ad;
+  cursor: pointer;
 }

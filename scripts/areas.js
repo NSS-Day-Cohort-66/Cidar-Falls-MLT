@@ -48,8 +48,5 @@ document.addEventListener("click", (areaClick) => {
     } else {
       window.alert(`There are ${counter} guests in this area`);
     }
-    areaHTML += `</div>`;
   }
-  areaHTML += `</div>`;
-  return areaHTML;
 });
